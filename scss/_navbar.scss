@@ -11,7 +11,7 @@
     .nav__list{
         background-color: $almost-white;
         position: fixed;
-     display: none;
+        display: none;
         right: 0%;
         top: 0%;
         width: 65%;
@@ -131,7 +131,8 @@
     .navbar{
         display: flex;
         background-color: transparent;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         gap: 3rem;
         padding-inline: 2rem;
         position: relative;
