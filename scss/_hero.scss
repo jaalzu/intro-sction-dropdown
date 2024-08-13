@@ -1,0 +1,155 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+
+    .img__hero{
+        margin-bottom: 3rem;
+    }
+
+
+    .description__hero{
+        text-align: center;
+
+
+        h1{
+            font-size: 2.4rem;
+            color: $almost-black;
+            margin-bottom: 1.3rem;
+            font-weight: $font-weight-epilogue-700;
+        }
+
+
+        p{
+            color: $medium-gray;
+            font-weight: $font-weight-epilogue-500;
+            font-size: $fs;
+            margin-bottom: 2rem;
+            padding-inline: .6rem;
+            line-height: 1.6;
+        }
+
+        
+        a{
+            padding: 1rem 1.5rem;
+            background-color: $almost-black;
+            color: $almost-white;
+            display: inline-block;
+            border-radius: 15px;
+            outline: none;
+            font-size: $fs;
+            font-weight: $font-weight-epilogue-700;
+            border: none;
+        }
+    }
+
+
+    .clients{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 2.5rem;
+        width: 100%;
+        margin-top: 3.5rem;
+
+
+        img{
+            width: 25%;
+            margin: .5rem;
+        }
+    }
+
+
+    .img__hero__desktop{
+        display: none;
+    }
+}
+
+
+
+
+
+// MEDIA QUERIES 
+
+
+
+
+
+@media screen and (min-width:744px){
+
+
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+
+        .img__hero{
+            order: 2;
+
+
+                img{
+                    max-width: 90%;
+                    height: 80%;
+                    margin-left: 10rem;
+                }
+        }
+
+
+        .description__hero{
+            text-align: initial;
+            margin-left: 15%;
+            margin-top: 8rem;
+
+
+                h1{
+                    font-size: 5rem;
+                    margin-bottom: 2rem;
+                }
+
+
+                p{
+                    font-size: 1.3rem;
+                }
+
+
+                a{
+                    margin-top: 1.1rem;
+                    transition: .2s ease-in;
+                    border: 1px solid black;
+                    font-size: 1.3rem;
+
+
+                    &:hover{
+                        background-color: $almost-white;
+                        color: $almost-black;
+
+                            }
+                }
+        }
+        
+
+        
+        .clients{
+            order: 3;
+            margin-top: 6rem;
+            padding-inline: 0;
+
+
+            img{
+                margin: 1rem;
+            }
+        }
+
+
+        .img__hero__mobile{
+            display: none;
+        }
+        
+
+        .img__hero__desktop{
+            display: block;
+        }
+    }
+}
