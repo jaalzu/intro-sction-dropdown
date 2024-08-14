@@ -245,7 +245,8 @@
     margin-bottom: 2rem;
   }
   .hero .description__hero p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    max-width: 90%;
   }
   .hero .description__hero a {
     margin-top: 1.1rem;
