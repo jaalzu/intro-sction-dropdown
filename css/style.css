@@ -241,8 +241,9 @@
   }
   .hero .description__hero h1 {
     font-size: 5rem;
-    max-width: 90%;
     margin-bottom: 2rem;
+    border: 1px solid black;
+    width: 95%;
   }
   .hero .description__hero p {
     font-size: 1.2rem;
