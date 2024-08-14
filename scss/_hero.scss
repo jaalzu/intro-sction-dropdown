@@ -80,9 +80,10 @@
 
 
     .hero{
+         padding-right: 5rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 1rem;
 
 
         .img__hero{
@@ -105,6 +106,7 @@
 
                 h1{
                     font-size: 5rem;
+                    max-width: 90%;
                     margin-bottom: 2rem;
                 }
 
@@ -118,7 +120,7 @@
                     margin-top: 1.1rem;
                     transition: .2s ease-in;
                     border: 1px solid black;
-                    font-size: 1.3rem;
+                    font-size: 1.130rem;
 
 
                     &:hover{
@@ -138,7 +140,7 @@
 
 
             img{
-                margin: 1rem;
+                margin: 1.5rem;
             }
         }
 
